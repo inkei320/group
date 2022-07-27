@@ -1,0 +1,51 @@
+*{
+	font-family:Arial, Helvetica, 微軟正黑體;
+	font-weight:bold;
+ line-height: 25px;}
+
+.all{
+  border: thick double #CFDEED;
+}
+
+.all2{
+	border: thick double #C7C9E6;
+}
+
+div{
+  margin:15px;border:0;padding: 10px;
+}
+
+.q10 h2{
+  text-align: center;
+  color:blue
+}
+
+.question p{
+  text-align: left;
+  color:blueviolet
+}
+.ouside{
+    display: flex;
+    position: relative;
+    width: 450px;
+    height: 100px;
+}
+
+.ouside img{
+  width: 200px;height: 90px;}
+
+.ouside button{
+width: 75px;height: 40px;margin:30px
+}
+
+.ouside p{
+  width: 75px;height: 70px;margin:30px
+}
+
+.q10{
+  width: 900px;
+  height: 110px;
+  padding-left: 30px;
+ 
+
+}

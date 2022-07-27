@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIVIZ</title>
+  <link rel="icon" type="image/x-icon" href="assets/fav.ico" />
+  <link href="css/style.css" rel="stylesheet" />
+  <script src="JS/scripts.js"></script>
+
+  <!-- 外部匯入樣式 -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="https://kit.fontawesome.com/993da95711.js" crossorigin="anonymous"></script>
+  <script language="javascript">function changeImageString(TargetID,FildAddres){document.images[TargetID].src= FildAddres;}</script>
+</head>
+
+
+<body class="body">
+
+  <div class="header" id="header">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-top">
+      <div class="container">
+        <div class="navbar-header"><Img src="assets/img/navbar-logo.png" width="100px" height="45px"></div>
+        <div class="navbar-collapse collapse">
+          <div class="nav navbar-nav navbar-right">
+            <li><a href="#scene">🦋最新消息 NEWS</a></li>
+            <li><a href="#group-intro">🦋團體 VIVIZ</a></li>
+            <li><a href="#MEMBER">🦋成員 MEMBER</a></li>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- 輪播圖 --> 
+    <div class="slides-img" id="slides-img">
+      <div class="bbox">
+        <ul class="slides">
+          <input type="radio" id="control-1" name="control" checked>
+          <input type="radio" id="control-2" name="control">
+          <input type="radio" id="control-3" name="control">
+          <input type="radio" id="control-4" name="control">
+          <!-- 左右箭頭   -->
+          <div class="navigator slide-1">
+            <label for="control-4">
+              <i class="fas fa-chevron-left"></i>
+            </label>
+            <label for="control-2">
+              <i class="fas fa-chevron-right"></i>
+            </label>
+          </div>
+
+          <div class="navigator slide-2">
+            <label for="control-1">
+              <i class="fas fa-chevron-left"></i>
+            </label>
+            <label for="control-3">
+              <i class="fas fa-chevron-right"></i>
+            </label>
+          </div>
+
+          <div class="navigator slide-3">
+            <label for="control-2">
+              <i class="fas fa-chevron-left"></i>
+            </label>
+            <label for="control-4">
+              <i class="fas fa-chevron-right"></i>
+            </label>
+          </div>
+
+          <div class="navigator slide-4">
+            <label for="control-3">
+              <i class="fas fa-chevron-left"></i>
+            </label>
+            <label for="control-1">
+              <i class="fas fa-chevron-right"></i>
+            </label>
+          </div>  
+
+
+          <li class="slide"></li>
+          <li class="slide"></li>
+          <li class="slide"></li>
+          <li class="slide"></li>
+
+          <div class="controls-visible">
+            <label for="control-1"></label>
+            <label for="control-2"></label>
+            <label for="control-3"></label>
+            <label for="control-4"></label>
+          </div>
+
+      </div>
+    </div>
+
+
+    <!-- 最新消息 -->
+    <div id="scene" class="scene">
+      <div id="left-zone">
+        <ul class="list">
+          <li class="item">
+            <input type="radio" id="radio_ig" name="basic_carousel" value="ig" checked="checked" />
+            <label class="label_ig" for="radio_ig">&emsp;Instagram</label>
+            <div class="content content_ig"><span class="picto"><img src="assets/img/sinb.jfif" width="450px"
+                  height="280px"></span>
+              <div class="scenenew">
+                <p>2021.06.06<br>
+                  [#VIVIZ] 📸<br>
+                  신비 (SINB) '꽃' Cover 촬영 현장 비하인드
+                  <a href="https://m.cafe.daum.net/VIVIZ/YmhR/4?svc=cafeapp"
+                    target="_blank">🔗</a>https://cafe.daum.net/VIVIZ/Y7iL/42?svc=cafeapi<br>
+                  <a href="https://www.instagram.com/p/CeVlujPJb76/?utm_source=ig_web_copy_link"
+                    target="_blank">前往貼文</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="item">
+            <input type="radio" id="radio_vlive" name="basic_carousel" value="vlive" />
+            <label class="label_vlive" for="radio_vlive">&emsp;V Live</label>
+            <div class="content content_vlive">
+              <span class="picto">
+                <iframe src='https://vlive.tv/embed/285087?autoPlay=true' frameborder='no' scrolling='no' marginwidth='0' marginheight='0' WIDTH='450' HEIGHT='280' allowfullscreen></iframe>
+              </span>
+              <div class="scenenew">
+                <p>2022.06.06<br>
+                  보러 옴👀<br><a href="https://www.vlive.tv/post/1-29410703" target="_blank">前往貼文</a>
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="item">
+            <input type="radio" id="radio_twitter" name="basic_carousel" value="twitter" />
+            <label class="label_twitter" for="radio_twitter">&emsp;Twitter</label>
+            <div class="content content_twitter"><span class="picto"><img src="assets/img/sinb.jfif" width="450px"
+                  height="280px"></span>
+                  <div class="scenenew">
+                    <p>2021.06.06<br>
+                      [#VIVIZ] 📸<br>
+                      신비 (SINB) '꽃' Cover 촬영 현장 비하인드
+                      <a href="https://m.cafe.daum.net/VIVIZ/YmhR/4?svc=cafeapp"
+                        target="_blank">🔗</a>https://cafe.daum.net/VIVIZ/Y7iL/42?svc=cafeapi<br>
+                      <a href="https://www.instagram.com/p/CeVlujPJb76/?utm_source=ig_web_copy_link"
+                        target="_blank">前往貼文</a>
+                  </div>
+            </div>
+          </li>
+
+          <li class="item">
+            <input type="radio" id="radio_youtube" name="basic_carousel" value="youtube" />
+            <label class="label_youtube" for="radio_youtube">&emsp;YouTube</label>
+            <div class="content content_youtube">
+              <span class="picto">
+                <iframe width="450" height="280"
+                  src="https://www.youtube.com/embed/A25X6LcgtaA" title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe>
+              </span>
+              <div class="scenenew">
+		            <p>2021.06.03<br>
+              신비 (SINB) - '꽃' (구름) Cover <br>
+              <a href="https://youtu.be/A25X6LcgtaA" target="_blank">前往影片</a>
+                </p>
+              </div>
+       
+          </li>
+    </ul> </div>
+  </div>
+  <div id="middle-border"></div>
+  <div id="right-zone"></div>
+  </div>
+
+  <!-- 團體的介紹 -->
+  <div class ='group-intro' id="group-intro">
+    <h2>VIVIZ
+    <span>(비비지)</span>
+    </h2>  
+    <h5>Big Planet Made娛樂</h5>
+    <HR>
+    <p>
+      團體成員：銀河 Eunha、信飛 SinB、嚴智 Umji<br>
+      出道日期：2022.02.09<br>
+      粉絲名稱：Na.V εїз<br>
+      出道歌曲：BOP BOP!<br></p>
+    <HR>     
+       <img src='assets/img/gp2.jpg'  >   
+
+  <div class="music"></div>
+    <h2>撥放音樂
+      <span>(按一下撥放，再按一下暫停)</span>
+    </h2>
+      <div class="mub" title="BOP BOP!">
+          <audio src="bob.mp3" controls="controls" id="music1" hidden="true" loop=true>
+          </audio>
+          <button onclick="musicb();"><img src="assets/img/bopop.png" class="rotate" width="50" height="50" /></button>
+      </div>
+
+      <div class="mur" title="Red Sun!">
+        <audio src="redsun.mp3" controls="controls" id="music2" hidden="true" loop=true>
+        </audio>
+        <button onclick="musicr();"><img src="assets/img/q2.png" class="rotate" width="50" height="50" /></button>
+      </div>
+  </div>
+
+  <!-- 個人介紹 -->
+  <div id="MEMBER" class="MEMBER">
+    <div class="EUNHA">
+        <img id="e1" type="image" src="assets/img/e1.jpg" 
+        width="150px" height="150px" 
+        onmouseover= "changeImageString('e1','assets/img/e2.jfif')"
+        onmouseout="changeImageString('e1','assets/img/e1.jpg') "/>
+      <div class="pp">
+        <h2>銀河 Eunha</h2>
+        <p>本名：丁恩妃<br>
+          生日：1997.05.30<br>
+          暱稱：小可愛、可愛喵<br>
+          代表色：紫色<br>
+          合作代表作品：「Inferiority Comple」<br>
+          個人IG:rlo.ldl<a href="https://www.instagram.com/viviz_official/" target="_blank"><img
+              src="assets/img/ig.png"></a></p>
+      </div>
+    </div>
+
+    <div class="SinB">
+      <img id="s1" type="image" src="assets/img/sinb1.jpg" 
+      width="150px" height="150px" 
+      onmouseover= "changeImageString('s1','assets/img/sinb.jfif')"
+      onmouseout="changeImageString('s1','assets/img/sinb1.jpg') "/>
+      <div class="pp">
+        <h2>信飛 SinB</h2>
+        <p>本名：黃恩妃<br>
+          生日：1998.06.03<br>
+          暱稱：飛爺、恩比<br>
+          代表色：藍色<br>
+          合作代表作品：「Wow Thing」<br>
+          個人IG:bscenez<a href="https://instagram.com/bscenez?igshid=YmMyMTA2M2Y=" target="_blank"><img
+              src="assets/img/ig.png"></a>
+        </p>
+      </div>
+    </div>
+
+
+    <div class="Umji">
+      <img id="u1" type="image" src="assets/img/umji1.jpg" 
+      width="150px" height="150px" 
+      onmouseover= "changeImageString('u1','assets/img/U1.jpg')"
+      onmouseout="changeImageString('u1','assets/img/umji1.jpg') "/>
+      <div class="pp">
+        <h2>嚴智 Umji</h2>
+        <p>本名：金藝源<br>
+          生日：1998.08.19<br>
+          暱稱：拇指公主、智智<br>
+          代表色：紅色<br>
+          solo代表作品：「The Way」<br>
+          個人IG:ummmmm_j.i<a href="https://instagram.com/ummmmm_j.i?igshid=YmMyMTA2M2Y=" target="_blank"><img
+              src="assets/img/ig.png"></p></a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 測驗 -->
+  <div class="testq10">
+    <img src="assets/img/eunha1.gif" width="250px" height="185px">
+    <div class="q10p">
+    <h2>VIVIZ的粉絲測驗<br>
+      <p>測驗你是不是一百分的粉絲！<br><a href="q10.html" target="_blank">🦋前往測驗🦋</a></p>
+      
+    </h2></div>
+      <div class="heart">
+        <div class="heart1"></div>
+        <div class="heart2"></div>
+      </div>
+      <div class="heart">
+        <div class="heart3"></div>
+        <div class="heart4"></div>
+      </div>
+      <div class="heart">
+        <div class="heart5"></div>
+        <div class="heart6"></div>
+      </div>
+  </div>
+
+
+
+  <!-- 底部樣式 -->
+  <footer>
+    <div class="footer" id="footer">
+      <div class="container">
+        <p class="footer-text">&emsp;&emsp;&emsp; εїз VIVIZ DEBUT IN 2022 εїз</p>
+        <ul class="footer-menu">
+          <li><a href="https://vt.tiktok.com/ZSe4FYpYt/ " target="_blank"><img src=assets/img/picwish.png></a></li>
+          <li><a href="https://www.youtube.com/channel/UCWFMjDuWKlct0jy89k2kkRA" target="_blank"><img
+                src=assets/img/yt.png></a></li>
+          <li><a href="https://twitter.com/viviz_official" target="_blank"><img src=assets/img/tt.png></a></li>
+          <li><a href="https://www.vlive.tv/channel/834F7D" target="_blank"><img src=assets/img/v.png></a></li>
+          <li><a href="https://www.instagram.com/viviz_official/" target="_blank"><img src=assets/img/ig.png></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 應援介面  -->
+  <div id="siderbar1"></div>
+  <div id="siderbar2">
+    <button class="advertise" title="Quenndom2 第十期投票" onclick=openvote()>
+      VOTE<br><img src="assets/img/Queendom_2_logo.png" width="25px" height="25px">
+    </button>
+  </div>
+  <!-- 回到頂部小蝴蝶 -->
+  <button class="js-back-to-top back-to-top" title="回到頂部">εїз</button>
+
+
+
+</body>
+
+
+<script>
+  // 回到頂端樣式
+  $(function () {
+    var $win = $(window);
+    var $backToTop = $('.js-back-to-top');
+
+    $win.scroll(function () {
+      if ($win.scrollTop() > 100) { $backToTop.show(); }
+      else { $backToTop.hide(); }
+    });
+
+
+    $backToTop.click(function () { $('html, body').animate({ scrollTop: 0 }, 200); });
+  });
+
+
+
+</script>
+
+</html>
